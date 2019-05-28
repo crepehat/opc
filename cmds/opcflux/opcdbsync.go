@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/crepehat/opc"
-	client "github.com/influxdata/influxdb1-client"
+	client "github.com/influxdata/influxdb1-client/v2"
 	"github.com/knetic/govaluate"
 	yaml "gopkg.in/yaml.v2"
 )
@@ -84,9 +84,9 @@ func main() {
 	//setup influxdb client
 	//TODO: get username and password for influx from environment variables
 	c, err := client.NewHTTPClient(client.HTTPConfig{
-		Addr: conf.Influx.Addr,
-		//Username: conf.Influx.Username,
-		//Password: conf.Influx.Password,
+		Addr:     conf.Influx.Addr,
+		Username: conf.Influx.Username,
+		Password: conf.Influx.Password,
 	})
 	if err != nil {
 		fmt.Println(err)
