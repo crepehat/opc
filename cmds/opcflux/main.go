@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb/client/v2"
+	"github.com/crepehat/opc"
+	client "github.com/influxdata/influxdb1-client"
 	"github.com/knetic/govaluate"
-	"github.com/konimarti/opc"
 	yaml "gopkg.in/yaml.v2"
 )
 
