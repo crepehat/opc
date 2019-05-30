@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/crepehat/opc"
 	"github.com/gorilla/mux"
-	"github.com/konimarti/opc"
 )
 
 // App contains the opc connection and the API routes

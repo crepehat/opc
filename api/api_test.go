@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/konimarti/opc"
-	"github.com/konimarti/opc/api"
+	"github.com/crepehat/opc"
+	"github.com/crepehat/opc/api"
 )
 
 var a api.App
